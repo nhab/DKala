@@ -1869,7 +1869,9 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Core": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.17"
+          "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Microsoft.EntityFrameworkCore.Relational": "5.0.17",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17"
         },
         "compile": {
           "bin/placeholder/Infrastructure.dll": {}
