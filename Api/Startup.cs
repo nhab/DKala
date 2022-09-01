@@ -29,7 +29,7 @@ namespace Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<StoreDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
+            
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

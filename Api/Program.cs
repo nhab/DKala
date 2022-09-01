@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Infrastructure.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -11,9 +12,14 @@ namespace Api
 {
     public class Program
     {
-        public static void Main(string[] args)
+        private  readonly StoreDbContext _context;
+        Program(StoreDbContext dbcontext)
         {
-            CreateHostBuilder(args).Build().Run();
+            _context = dbcontext;
+        }
+        public static   void Main(string[] args)
+        {
+              CreateHostBuilder(args).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

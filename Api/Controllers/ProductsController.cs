@@ -20,6 +20,12 @@ namespace API.Controllers
             _context = context;
         }
 
+        [HttpGet("seed")]
+
+        public async void Seed()
+        {
+            await StoreDbContextSeed.SeedAsync(_context);
+        }
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {
