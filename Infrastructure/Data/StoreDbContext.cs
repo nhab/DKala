@@ -1,7 +1,13 @@
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using System.Collections.Generic;
+using System.Linq;
+using System;
 using System.Reflection;
+using System.Threading.Tasks;
+using System.IO;
+using System.Text.Json;
 
 namespace Infrastructure.Data
 {
@@ -24,11 +30,13 @@ namespace Infrastructure.Data
             //builder.Property(p => p.ProductType).WithMany().
             //  HasForeignKey(p => p.ProductBrandId);
         }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
+       
+
     }
 }

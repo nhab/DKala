@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,7 +30,7 @@ namespace Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<StoreDbContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            
+            services.AddScoped<IProductRepository,ProductRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
