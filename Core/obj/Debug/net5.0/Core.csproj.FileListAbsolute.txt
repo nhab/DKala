@@ -33,4 +33,4 @@ C:\Users\n\Downloads\DKala-main\DKala-main\Core\obj\Debug\net5.0\Core.dll
 C:\Users\n\Downloads\DKala-main\DKala-main\Core\obj\Debug\net5.0\refint\Core.dll
 C:\Users\n\Downloads\DKala-main\DKala-main\Core\obj\Debug\net5.0\Core.pdb
 C:\Users\n\Downloads\DKala-main\DKala-main\Core\obj\Debug\net5.0\ref\Core.dll
-C:\root\prjs\DKala\Core\bin\Debug\net5.0\ref\Core.dll
+C:\root\prjs\DKala\Core\obj\Debug\net5.0\refint\Core.dll

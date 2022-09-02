@@ -192,4 +192,4 @@ C:\Users\n\Downloads\DKala-main\DKala-main\Api\obj\Debug\net5.0\refint\Api.dll
 C:\Users\n\Downloads\DKala-main\DKala-main\Api\obj\Debug\net5.0\Api.pdb
 C:\Users\n\Downloads\DKala-main\DKala-main\Api\obj\Debug\net5.0\Api.genruntimeconfig.cache
 C:\Users\n\Downloads\DKala-main\DKala-main\Api\obj\Debug\net5.0\ref\Api.dll
-C:\root\prjs\DKala\Api\bin\Debug\net5.0\ref\Api.dll
+C:\root\prjs\DKala\Api\obj\Debug\net5.0\refint\Api.dll

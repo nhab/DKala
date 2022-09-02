@@ -20,12 +20,24 @@ namespace Infrastructure.Data
                 {
                     if (!context.Products.Any())
                     {
+                        var brandsData="[{\"Name\":\"Nike\"}]";
+                        var brands = JsonSerializer.Deserialize<List<ProductBrand>>(brandsData);
+                        context.ProductBrands.AddRange(brands);
+
+                        var typesData= "[{\"Name\":\"Shoe\"}]";
+                        var types = JsonSerializer.Deserialize<List<ProductType>>(typesData);
+                        context.ProductTypes.AddRange(types);
+                        await context.SaveChangesAsync();
+
+                        var brandid = context.ProductBrands.Single<ProductBrand>().Id;
+                        var typeid=context.ProductTypes.Single<ProductType>().Id;
+
                         var productsData =
                           File.ReadAllText("../Infrastructure/Data/SeedData/products.json");
                         var products = JsonSerializer.Deserialize<List<Product>>(productsData);
-
+                        
                         context.Products.AddRange(products);
-                        List<Product> t = context.Products.ToList<Product>();
+                        //List<Product> t = context.Products.ToList<Product>();
                         await context.SaveChangesAsync();
                     }
                 }

@@ -42,4 +42,4 @@ C:\Users\n\Downloads\DKala-main\DKala-main\Infrastructure\obj\Debug\net5.0\Infra
 C:\Users\n\Downloads\DKala-main\DKala-main\Infrastructure\obj\Debug\net5.0\refint\Infrastructure.dll
 C:\Users\n\Downloads\DKala-main\DKala-main\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
 C:\Users\n\Downloads\DKala-main\DKala-main\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
-C:\root\prjs\DKala\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+C:\root\prjs\DKala\Infrastructure\obj\Debug\net5.0\refint\Infrastructure.dll
