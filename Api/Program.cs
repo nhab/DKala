@@ -30,6 +30,7 @@ namespace Api
                 {
                     var context = services.GetRequiredService<StoreDbContext>();
                     await context.Database.MigrateAsync();
+                    await StoreDbContextSeed.SeedAsync(context, loggerFactory);
                 }
                 catch (Exception ex)
                 {

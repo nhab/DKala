@@ -22,12 +22,12 @@ namespace API.Controllers
             _repo = repository;
         }
 
-        [HttpGet("seed")]
+        //[HttpGet("seed")]
 
-        public   void Seed()
-        {
-              _repo.Seed();
-        }
+        //public   void Seed()
+        //{
+        //      _repo.Seed();
+        //}
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetProducts()
         {

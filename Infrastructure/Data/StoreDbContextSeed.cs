@@ -12,6 +12,30 @@ namespace Infrastructure.Data
 {
     public class StoreDbContextSeed
     {
-       
+        public static async Task SeedAsync(StoreDbContext context, ILoggerFactory loggerFactory)
+        {
+            try
+            {
+                using (context)
+                {
+                    if (!context.Products.Any())
+                    {
+                        var productsData =
+                          File.ReadAllText("../Infrastructure/Data/SeedData/products.json");
+                        var products = JsonSerializer.Deserialize<List<Product>>(productsData);
+
+                        context.Products.AddRange(products);
+                        List<Product> t = context.Products.ToList<Product>();
+                        await context.SaveChangesAsync();
+                    }
+                }
+        // repeat the proccess for ProductBrands and ProductTypes
+      }
+            catch (Exception ex)
+            {
+                var logger = loggerFactory.CreateLogger<StoreDbContextSeed>();
+                logger.LogError(ex.Message);
+            }
+        }
     }
 }
