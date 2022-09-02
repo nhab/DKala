@@ -17,9 +17,9 @@ namespace API.Controllers
     public class ProductController:ControllerBase
     {
         private readonly IProductRepository _repo;
-        public ProductController(IProductRepository repo)
+        public ProductController(IProductRepository repository)
         {
-            _repo = repo;
+            _repo = repository;
         }
 
         [HttpGet("seed")]
