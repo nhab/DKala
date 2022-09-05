@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1859mlBSJMXEY7hPRPYzBszGUHdujJZk1k6rK4xGI2ZYUuf+fqYFQMdH6QhsPPEYSa5o4d9C6fTi0jdMm0Bh8Q==",
+  "dgSpecHash": "DAmV/zFdvmUPXA1a+mPutTe3523nypKqRuyZHB2a54ECq4m8+jASrtpZUmba5+Jzma+R4KdSngexuO3qJRLfdA==",
   "success": true,
-  "projectFilePath": "C:\\root\\prjs\\DKala\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\.netcoreangularbootcamp\\7\\DKala\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\n\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\n\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

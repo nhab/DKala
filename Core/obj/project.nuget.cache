@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Yq9tWeUE5y5BBc8SfDvq9vQxUCQQ1kp6y/DKyU8DUAd0WAFHfHgJm7D36iq+kQy2y5CHm6LAenuwLpeHXhAYA==",
+  "dgSpecHash": "rhVsfttVJElD8aeN8cDdfxJ1OZCC9EjjXN8rr2wFS+cQdZWlKyNS8Z9XB8/6SVTe0xc1q7wZgKPDrftQYwM1Ag==",
   "success": true,
-  "projectFilePath": "C:\\root\\prjs\\DKala\\Core\\Core.csproj",
+  "projectFilePath": "C:\\.netcoreangularbootcamp\\7\\DKala\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

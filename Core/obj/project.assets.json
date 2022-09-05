@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\root\\prjs\\DKala\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\.netcoreangularbootcamp\\7\\DKala\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\root\\prjs\\DKala\\Core\\Core.csproj",
+      "projectPath": "C:\\.netcoreangularbootcamp\\7\\DKala\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\n\\.nuget\\packages\\",
-      "outputPath": "C:\\root\\prjs\\DKala\\Core\\obj\\",
+      "outputPath": "C:\\.netcoreangularbootcamp\\7\\DKala\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\n\\AppData\\Roaming\\NuGet\\NuGet.Config",
