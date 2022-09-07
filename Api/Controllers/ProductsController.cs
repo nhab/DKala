@@ -1,3 +1,4 @@
+using Api.DTOs;
 using Core.Entities;
 using Core.Interfaces;
 using Core.specifications;
@@ -15,13 +16,13 @@ namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ProductController:ControllerBase
+    public class ProductsController:ControllerBase
     {
         private  IGenericRepository<Product> _productsRepo;
         private IGenericRepository<ProductBrand> _productBrandRepo;
         private IGenericRepository<ProductType> _ProductTyeRepo;
 
-        public ProductController(IGenericRepository<Product> productsRepo,
+        public ProductsController(IGenericRepository<Product> productsRepo,
             IGenericRepository<ProductBrand> productBrandRepo, IGenericRepository<ProductType> productTyeRepo)
         {
             _productsRepo = productsRepo;
@@ -34,7 +35,17 @@ namespace API.Controllers
         {
             var spec = new ProductWithTypesAndBrandsSpecification();
             var products = await _productsRepo.ListAsync(spec);
-            return Ok(products);
+            var productDtos =products.Select(p=> new ProductToReturnDto
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Description = p.Description,
+                PictureUrl = p.PictureUrl,
+                Price = p.Price,
+                ProductBrand = p.ProductBrand.Name,
+                ProductType = p.ProductType.Name
+            } );
+            return Ok(productDtos);
         }
 
         [HttpGet("brands")]
@@ -49,11 +60,21 @@ namespace API.Controllers
             return Ok(await _ProductTyeRepo.ListAllAsync());
         }
         [HttpGet("{Id}")]
-        public async Task<ActionResult<Product>> GetProduct(int Id)
+        public async Task<ActionResult<ProductToReturnDto>> GetProduct(int Id)
         {
             var spec = new ProductWithTypesAndBrandsSpecification(Id);
 
-            return await _productsRepo.GetEntityWithSpec(spec);
+            var product = await _productsRepo.GetEntityWithSpec(spec);
+            return new ProductToReturnDto
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Description = product.Description,
+                PictureUrl = product.PictureUrl,
+                Price = product.Price,
+                ProductBrand = product.ProductBrand.Name,
+                ProductType = product.ProductType.Name
+            };
         }
     }
 
