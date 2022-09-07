@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7G0kTGAnPn3er/oLtMCxZkx87EuckOIKoMU7FwilnEIbLCL67Li7KY9Qp8U4DX99duwg4CBxn5ePOV6K6+rfog==",
+  "dgSpecHash": "TnYWOoobmtgwZSRIBiGo/aQAvIF7dObsdVxRhWgjxRi7NPEJ5rAR3Li7xCE++PTNikdm2Tu2E/tQjWkyohBGSQ==",
   "success": true,
-  "projectFilePath": "C:\\root\\prjs\\DKala\\Api\\Api.csproj",
+  "projectFilePath": "C:\\.netcoreangularbootcamp\\6\\DKala\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\n\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\n\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

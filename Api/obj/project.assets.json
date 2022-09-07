@@ -6283,11 +6283,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\root\\prjs\\DKala\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\.netcoreangularbootcamp\\6\\DKala\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\root\\prjs\\DKala\\Api\\Api.csproj",
+      "projectPath": "C:\\.netcoreangularbootcamp\\6\\DKala\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\n\\.nuget\\packages\\",
-      "outputPath": "C:\\root\\prjs\\DKala\\Api\\obj\\",
+      "outputPath": "C:\\.netcoreangularbootcamp\\6\\DKala\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\n\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6304,11 +6304,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\root\\prjs\\DKala\\Core\\Core.csproj": {
-              "projectPath": "C:\\root\\prjs\\DKala\\Core\\Core.csproj"
+            "C:\\.netcoreangularbootcamp\\6\\DKala\\Core\\Core.csproj": {
+              "projectPath": "C:\\.netcoreangularbootcamp\\6\\DKala\\Core\\Core.csproj"
             },
-            "C:\\root\\prjs\\DKala\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\root\\prjs\\DKala\\Infrastructure\\Infrastructure.csproj"
+            "C:\\.netcoreangularbootcamp\\6\\DKala\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\.netcoreangularbootcamp\\6\\DKala\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

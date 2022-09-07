@@ -1,0 +1,1 @@
+Angular project for front end
