@@ -22,6 +22,7 @@ namespace Api
         public  static async Task Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
+          
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -29,8 +30,7 @@ namespace Api
                 try
                 {
                     var context = services.GetRequiredService<StoreDbContext>();
-                   // await context.Database.MigrateAsync();
-                    //await context.Database.EnsureCreatedAsync();
+                  
                     await StoreDbContextSeed.SeedAsync(context, loggerFactory);
                 }
                 catch (Exception ex)
@@ -40,7 +40,6 @@ namespace Api
                 }
                 host.Run();
 
-                //CreateHostBuilder(args).Build().Run();
             }
         }
 

@@ -41,8 +41,7 @@ namespace Infrastructure.Data
                         await context.SaveChangesAsync();
                     }
                 }
-        // repeat the proccess for ProductBrands and ProductTypes
-      }
+            }
             catch (Exception ex)
             {
                 var logger = loggerFactory.CreateLogger<StoreDbContextSeed>();
