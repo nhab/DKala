@@ -18,7 +18,7 @@ namespace Infrastructure.Data
         {
             _context = context;
         }
-        public async Task<Product> getProductByIdAsync(int id)
+        public async Task<Product> GetProductByIdAsync(int id)
         {
             return await _context.Products.FindAsync(id);
         }
@@ -26,8 +26,8 @@ namespace Infrastructure.Data
         public async Task<IReadOnlyList<Product>> GetProductsAsync()
         {
             return await _context.Products
-                .Include(p => p.ProductTypes)
-                .Include(p => p.ProductBrands)
+                .Include(p => p.ProductType)
+                .Include(p => p.ProductBrand)
                 .ToListAsync();
         }
 
