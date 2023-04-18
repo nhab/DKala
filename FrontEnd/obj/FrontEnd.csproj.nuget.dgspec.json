@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.netcoreangularbootcamp\\6\\DKala\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\root\\prjs\\github\\DKala\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\.netcoreangularbootcamp\\6\\DKala\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\root\\prjs\\github\\DKala\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.netcoreangularbootcamp\\6\\DKala\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\root\\prjs\\github\\DKala\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\.netcoreangularbootcamp\\6\\DKala\\FrontEnd\\FrontEnd.csproj",
+        "projectPath": "C:\\root\\prjs\\github\\DKala\\FrontEnd\\FrontEnd.csproj",
         "packagesPath": "C:\\Users\\n\\.nuget\\packages\\",
-        "outputPath": "C:\\.netcoreangularbootcamp\\6\\DKala\\FrontEnd\\obj\\",
+        "outputPath": "C:\\root\\prjs\\github\\DKala\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\n\\AppData\\Roaming\\NuGet\\NuGet.Config",

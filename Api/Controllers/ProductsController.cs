@@ -46,13 +46,13 @@ namespace API.Controllers
             return Ok(productDtos);
         }
 
-        [HttpGet("brands")]
+        [HttpGet("/api/brands")]
         public async Task<ActionResult<List<ProductBrand>>> GetProductBrands()
         {
             return Ok(await _productBrandRepo.ListAllAsync());
         }
 
-        [HttpGet("typs")]
+        [HttpGet("/api/typs")]
         public async Task<ActionResult<List<ProductType>>> GetProductTypes()
         {
             return Ok(await _ProductTyeRepo.ListAllAsync());

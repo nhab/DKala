@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2xOUwL+sVJB9h/a3p8niFdLPAFIk1FzG08+5heO8JHZIAAR2wMxOk3yqUzvzJRqFrYkG8MO0tCSD0MC1Jh0yig==",
+  "dgSpecHash": "rSLCL4kp1a9PRbrUWo8lX7D5l1hU8+tAGryLHQKMUJoKrhYwgBoUpH1b7Tc/4HN0BhyeDrGJlhMVRs74W2tVqQ==",
   "success": true,
-  "projectFilePath": "C:\\.netcoreangularbootcamp\\6\\DKala\\FrontEnd\\FrontEnd.csproj",
+  "projectFilePath": "C:\\root\\prjs\\github\\DKala\\FrontEnd\\FrontEnd.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
